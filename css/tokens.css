@@ -1,0 +1,53 @@
+/* Tokens do site. Base do design system "Guilherme Fornazin", com fundo marrom bem escuro
+   e acentos em marrom e dourado-bege. */
+
+:root {
+  /* Base: fundo marrom escuro e texto claro */
+  --fundo: #130c08;          /* marrom bem escuro, quase preto */
+  --fundo-alto: #1e140e;
+  --fundo-janela: #151311;   /* janela do cliente: cinza neutro com um toque de marrom */
+  --branco: #e4e4e7;
+  --branco-medio: #a1a1aa;
+  --cinza: #8a8a93;
+  --linha: #3a2b20;
+  --tinta: #0a0a0a;          /* texto sobre fundos claros */
+
+  /* Acentos quentes */
+  --acento: #8a5a33;         /* marrom: botões e preenchimentos */
+  --acento-claro: #d1a97a;   /* dourado-bege: detalhes e hover sobre o fundo escuro */
+  --texto-sobre-acento: #e4e4e7;
+
+  /* Espaçamento */
+  --espaco-xs: 8px;
+  --espaco-s: 16px;
+  --espaco-m: 24px;
+  --espaco-l: 72px;
+  --espaco-xl: 160px;
+  --largura: 1200px;
+
+  /* Raios */
+  --raio-quadro: 20px;
+  --raio-cartao: 16px;
+  --raio-botao: 9999px;
+
+  /* Tipografia */
+  /* Nexa para títulos e frases de destaque (peso 650); Open Sans para texto corrido (400) */
+  --font-titulo: nexa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-texto: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-destaque: nexa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --peso-titulo: 650;
+
+  --destaque: clamp(40px, 5vw, 84px);  /* frase do hero: acompanha a largura da tela */
+  --titulo: 48px;
+  --subtitulo: 24px;
+  --corpo: 16px;
+  --legenda: 14px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --titulo: 32px;
+    --espaco-l: 48px;
+    --espaco-xl: 104px;
+  }
+}

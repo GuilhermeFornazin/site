@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# PENDENTE: descomentar quando houver domínio e sitemap.xml.
+# Sitemap: [URL-DO-SITE]/sitemap.xml

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/js-flag.js"></script>
+
+  <title>Guilherme Fornazin | Histórias reais, para pessoas reais</title>
+  <meta name="description" content="Produção audiovisual em Ribeirão Preto e região: conteúdo para redes sociais, vídeos para eventos e fotografia, com planejamento, intenção e cuidado com a qualidade visual.">
+  <meta name="theme-color" content="#130c08">
+  <link rel="icon" href="assets/logo/GF.svg" type="image/svg+xml">
+  <!-- A capa do vídeo é a primeira imagem grande da tela: pedida com prioridade. -->
+  <link rel="preload" as="image" href="assets/hero/hero-poster.webp" type="image/webp" fetchpriority="high">
+
+  <!-- PENDENTE (descomentar quando o domínio e a arte existirem; trocar [URL-DO-SITE] pelo endereço final):
+  <link rel="canonical" href="[URL-DO-SITE]/">
+  <meta property="og:url" content="[URL-DO-SITE]/">
+  <meta property="og:image" content="[URL-DO-SITE]/assets/og/capa.jpg">
+  -->
+
+  <!-- Compartilhamento. -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Guilherme Fornazin | Histórias reais, para pessoas reais">
+  <meta property="og:description" content="Conteúdo para redes sociais, vídeos para eventos e fotografia, em Ribeirão Preto e região.">
+
+  <!-- Títulos em Nexa (Adobe Fonts) e texto corrido em Open Sans (Google Fonts). -->
+  <link rel="stylesheet" href="https://use.typekit.net/ihi1fne.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "name": "Guilherme Fornazin",
+        "description": "Produção audiovisual: conteúdo para redes sociais, vídeos para eventos e fotografia.",
+        "areaServed": "Ribeirão Preto e região",
+        "address": { "@type": "PostalAddress", "addressLocality": "Ribeirão Preto", "addressRegion": "SP", "addressCountry": "BR" },
+        "sameAs": [
+          "https://www.instagram.com/guilhermefornazin/",
+          "https://www.tiktok.com/@guilhermefornazin",
+          "https://www.linkedin.com/in/guilhermefornazin/",
+          "https://www.youtube.com/@guilhermefornazin"
+        ]
+      },
+      {
+        "@type": "Person",
+        "name": "Guilherme de Godoy Fornazin",
+        "jobTitle": "Produtor audiovisual",
+        "sameAs": [
+          "https://www.instagram.com/guilhermefornazin/",
+          "https://www.tiktok.com/@guilhermefornazin",
+          "https://www.linkedin.com/in/guilhermefornazin/",
+          "https://www.youtube.com/@guilhermefornazin"
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="pular" href="#trabalhos">Pular para os trabalhos</a>
+
+  <!-- ===== 1. HERO (o cabeçalho fica dentro do hero e rola com ele) ===== -->
+  <section id="inicio" class="hero" aria-label="Apresentação">
+    <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" poster="assets/hero/hero-poster.webp" aria-hidden="true" tabindex="-1">
+      <!-- Só um dos dois é baixado: o navegador escolhe pela largura da tela. -->
+      <source src="assets/hero/hero-fullhd.mp4" type="video/mp4" media="(min-width: 1024px)">
+      <source src="assets/hero/hero-hd.mp4" type="video/mp4">
+    </video>
+    <div class="hero-veu" aria-hidden="true"></div>
+
+    <header class="topo">
+      <a class="assinatura" href="#inicio" aria-label="Guilherme Fornazin, início">
+        <picture>
+          <!-- Telas estreitas usam o logotipo empilhado; telas largas, o horizontal. -->
+          <source media="(max-width: 1279px)" srcset="assets/logo/horizontal-sem-nada.svg" width="219" height="61">
+          <img src="assets/logo/horizontal.svg" alt="Guilherme Fornazin" width="429" height="27">
+        </picture>
+      </a>
+      <nav class="topo-nav" id="topoPainel" aria-label="Principal">
+        <a href="#trabalhos"><span>Trabalhos</span></a>
+        <a href="#como-trabalho"><span>Como eu produzo</span></a>
+        <a href="#sobre"><span>Sobre</span></a>
+      </nav>
+      <a class="topo-contato" href="https://wa.me/5516997595027?text=Oi%2C%20vi%20seu%20portf%C3%B3lio%20pelo%20site%20e%20gostaria%20de%20come%C3%A7ar%20um%20projeto" target="_blank" rel="noopener" aria-label="Fale comigo pelo WhatsApp"><span>Fale comigo pelo WhatsApp</span></a>
+      <!-- Botão que abre e fecha o menu em telas estreitas (ver js/header.js e css/site.css). -->
+      <button class="topo-menu" id="topoMenu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="topoPainel">
+        <span class="topo-menu-icone" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </header>
+
+    <h1 class="hero-titulo"><span class="frase-destaque"><span class="frase-linha">Histórias reais, </span><br><span class="frase-linha">para pessoas reais.</span></span></h1>
+  </section>
+
+  <main>
+    <!-- ===== 3. TRABALHOS ===== -->
+    <section id="trabalhos" class="secao" aria-labelledby="trabalhos-titulo">
+      <div class="coluna">
+        <h2 id="trabalhos-titulo" class="sr-only">Trabalhos</h2>
+        <ul class="grade" id="grade"></ul>
+        <noscript>
+          <p class="corpo centro">Caminhada pela Paz, Dufe Coffee, MVB, Glaucia Afonso, Só se for Flash e G.A. Motors.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ===== 4. PROPÓSITO ===== -->
+    <section id="manifesto" class="manifesto" aria-labelledby="manifesto-rotulo">
+      <p id="manifesto-rotulo" class="rotulo revelar">Intenção</p>
+      <p class="manifesto-texto revelar">
+        Para quem não sabe aonde quer ir, qualquer direção serve. Por isso, antes de planejar qualquer coisa, eu escuto você para entender o seu projeto a fundo.
+      </p>
+    </section>
+
+    <!-- ===== CHAMADA PARA O WHATSAPP (abaixo do propósito) ===== -->
+    <div class="chamada-contato">
+      <a class="botao" href="https://wa.me/5516997595027?text=Oi%2C%20vi%20seu%20portf%C3%B3lio%20pelo%20site%20e%20gostaria%20de%20come%C3%A7ar%20um%20projeto" target="_blank" rel="noopener">Fale comigo pelo WhatsApp</a>
+    </div>
+
+    <!-- ===== 5. COMO EU PRODUZO ===== -->
+    <section id="como-trabalho" class="secao" aria-labelledby="trabalho-titulo">
+      <div class="coluna">
+        <h2 id="trabalho-titulo" class="titulo revelar">Como eu produzo</h2>
+        <ol class="etapas">
+          <li class="etapa revelar">
+            <div class="etapa-cabeca">
+              <svg class="etapa-icone" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle pathLength="1" cx="12" cy="12" r="3"/></svg>
+              <h3 class="subtitulo">Entendo o seu negócio</h3>
+            </div>
+            <p class="corpo">Quero saber o que você vende, para quem e o que precisa que as pessoas entendam depois de assistir ao vídeo e como funciona a sua empresa.</p>
+          </li>
+          <li class="etapa revelar">
+            <div class="etapa-cabeca">
+              <svg class="etapa-icone" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M4 20l4-1L19 8l-3-3L5 16l-1 4z"/><path pathLength="1" d="M14 6l3 3"/></svg>
+              <h3 class="subtitulo">Posicionamento e planejamento</h3>
+            </div>
+            <p class="corpo">Defino o posicionamento, a forma de comunicação, o formato e o roteiro com você. Nada vai para a gravação sem intenção.</p>
+          </li>
+          <li class="etapa revelar">
+            <div class="etapa-cabeca">
+              <svg class="etapa-icone" viewBox="0 0 24 24" aria-hidden="true"><rect pathLength="1" x="3" y="7" width="18" height="13" rx="2"/><path pathLength="1" d="M8 7l1.5-3h5L16 7"/><circle pathLength="1" cx="12" cy="13.5" r="3.5"/></svg>
+              <h3 class="subtitulo">Gravação e edição</h3>
+            </div>
+            <p class="corpo">Com o roteiro pronto, gravo e edito o material. O seu único trabalho é publicar o vídeo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 6. SOBRE ===== -->
+    <section id="sobre" class="sobre" aria-labelledby="sobre-titulo">
+      <div class="sobre-texto">
+        <h2 id="sobre-titulo" class="rotulo revelar">Sobre mim</h2>
+        <p class="destaque-medio revelar">Antes mesmo de pensar em gravar, o conteúdo precisa de intenção.</p>
+        <p class="corpo revelar">Vejo muita gente travar na hora de fazer um vídeo porque não sabe qual caminho quer seguir. Todo vídeo precisa de uma intenção clara: vender, ganhar reconhecimento, mostrar autoridade ou simplesmente educar quem assiste. Por isso, meu objetivo é produzir conteúdo que funciona e conversa com o seu público com uma estética agradável, com ritmo leve e uma boa história.</p>
+        <a class="botao revelar" href="https://wa.me/5516997595027?text=Oi%2C%20vi%20seu%20portf%C3%B3lio%20pelo%20site%20e%20gostaria%20de%20come%C3%A7ar%20um%20projeto" target="_blank" rel="noopener">Fale comigo pelo WhatsApp</a>
+      </div>
+
+      <!-- Carrossel de fotos (proporção 4:3). As fotos ficam em assets/sobre/, em WebP de 800 e 1600 px. -->
+      <section class="sobre-carrossel revelar" id="sobreCarrossel" aria-roledescription="carrossel" aria-label="Fotos do trabalho">
+        <button class="sobre-seta sobre-anterior" id="sobreAnterior" type="button" aria-label="Foto anterior">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <button class="sobre-seta sobre-proxima" id="sobreProxima" type="button" aria-label="Próxima foto">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <figure class="sobre-slide ativo" aria-roledescription="slide">
+          <img src="assets/sobre/foto-camera-800.webp" srcset="assets/sobre/foto-camera-800.webp 800w, assets/sobre/foto-camera-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 50vw" width="1600" height="1067" alt="Câmera em gimbal filmando ao ar livre, com pessoas ao fundo" loading="lazy" decoding="async">
+        </figure>
+        <figure class="sobre-slide" aria-roledescription="slide" aria-hidden="true">
+          <img src="assets/sobre/foto-logo-a-800.webp" srcset="assets/sobre/foto-logo-a-800.webp 800w, assets/sobre/foto-logo-a-1600.webp 1500w" sizes="(max-width: 899px) 100vw, 50vw" width="1500" height="2000" alt="Pessoa sentada diante de um painel iluminado com a letra A" loading="lazy" decoding="async">
+        </figure>
+        <figure class="sobre-slide" aria-roledescription="slide" aria-hidden="true">
+          <img src="assets/sobre/foto-microfone-800.webp" srcset="assets/sobre/foto-microfone-800.webp 800w, assets/sobre/foto-microfone-1600.webp 1600w" sizes="(max-width: 899px) 100vw, 50vw" width="1600" height="2000" alt="Pessoa de pé falando ao microfone durante um evento" loading="lazy" decoding="async">
+        </figure>
+        <figure class="sobre-slide" aria-roledescription="slide" aria-hidden="true">
+          <img src="assets/sobre/foto-heic-800.webp" srcset="assets/sobre/foto-heic-800.webp 800w, assets/sobre/foto-heic-1600.webp 1500w" sizes="(max-width: 899px) 100vw, 50vw" width="1500" height="2000" alt="Câmera em gimbal diante de carros em uma loja de veículos" loading="lazy" decoding="async">
+        </figure>
+        <div class="sobre-pontos" role="group" aria-label="Escolher foto">
+          <button class="sobre-ponto" type="button" aria-label="Foto 1" aria-current="true"></button>
+          <button class="sobre-ponto" type="button" aria-label="Foto 2"></button>
+          <button class="sobre-ponto" type="button" aria-label="Foto 3"></button>
+          <button class="sobre-ponto" type="button" aria-label="Foto 4"></button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- ===== 7. RODAPÉ (logotipo e copyright em cima; Mais, Redes sociais e Contatos embaixo) ===== -->
+  <footer class="rodape">
+    <div class="rodape-grade">
+      <a class="assinatura rodape-logo" href="#inicio" aria-label="Voltar ao início">
+        <picture>
+          <source media="(max-width: 1279px)" srcset="assets/logo/horizontal-sem-nada.svg" width="219" height="61">
+          <img src="assets/logo/horizontal.svg" alt="Guilherme Fornazin" width="429" height="27">
+        </picture>
+      </a>
+
+      <nav class="rodape-col" aria-label="Mapa do site">
+        <p class="rodape-rotulo">Mais</p>
+        <a href="#inicio">Início</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#como-trabalho">Como eu produzo</a>
+        <a href="#sobre">Sobre</a>
+        <!-- Só aparece quando há medição ligada (ver js/consentimento.js). -->
+        <button class="rodape-cookies" id="abrirCookies" type="button" hidden>Cookies</button>
+      </nav>
+
+      <nav class="rodape-col" aria-label="Redes sociais">
+        <p class="rodape-rotulo">Redes sociais</p>
+        <a href="https://www.instagram.com/guilhermefornazin/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@guilhermefornazin" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.linkedin.com/in/guilhermefornazin/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.youtube.com/@guilhermefornazin" target="_blank" rel="noopener">YouTube</a>
+      </nav>
+
+      <div class="rodape-col rodape-contato">
+        <p class="rodape-rotulo">Contatos</p>
+        <a href="https://wa.me/5516997595027?text=Oi%2C%20vi%20seu%20portf%C3%B3lio%20pelo%20site%20e%20gostaria%20de%20come%C3%A7ar%20um%20projeto" target="_blank" rel="noopener" aria-label="Telefone: chamar no WhatsApp">+55&nbsp;(16)&nbsp;99759&#8209;5027</a>
+        <a href="mailto:guilhermefornazin@gmail.com">guilhermefornazin@gmail.com</a>
+        <span>Ribeirão Preto e região</span>
+      </div>
+
+      <p class="rodape-copy">© 2026 Guilherme Fornazin. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===== PLAYER DE VÍDEO (modal) ===== -->
+  <dialog class="video" id="video" aria-labelledby="videoTitulo">
+    <div class="video-caixa" id="videoCaixa">
+      <div class="video-topo">
+        <h2 class="subtitulo" id="videoTitulo">Vídeo</h2>
+        <button class="video-fechar" id="videoFechar" type="button" aria-label="Fechar vídeo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="video-player" id="videoPlayer"></div>
+      <p class="corpo video-descricao" id="videoDescricao" hidden></p>
+    </div>
+  </dialog>
+
+  <!-- ===== JANELA DO CLIENTE (texto à esquerda, vídeos à direita) ===== -->
+  <dialog class="projeto" id="projeto" aria-labelledby="projetoNome">
+    <div class="projeto-caixa">
+      <button class="video-fechar projeto-fechar" id="projetoFechar" type="button" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="projeto-texto">
+        <h2 class="projeto-nome" id="projetoNome">Cliente</h2>
+        <p class="projeto-servico" id="projetoServico">Serviço</p>
+        <p class="corpo projeto-descricao" id="projetoDescricao"></p>
+      </div>
+      <div class="projeto-videos" id="projetoVideos"></div>
+      <!-- Galeria (só aparece em projetos com "galeria" em data/site.js): uma foto por vez, troca sozinha. -->
+      <section class="projeto-galeria" aria-label="Fotos da casa">
+        <div class="galeria-quadro" id="galeriaQuadro">
+          <button class="galeria-seta galeria-anterior" id="galeriaAnterior" type="button" aria-label="Foto anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="galeria-seta galeria-proxima" id="galeriaProxima" type="button" aria-label="Próxima foto">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <!-- ===== FOTO AMPLIADA (por cima da janela do cliente) ===== -->
+  <dialog class="ampliada" id="ampliada">
+    <h2 class="sr-only">Foto ampliada</h2>
+    <img class="ampliada-foto" id="ampliadaFoto" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    <button class="video-fechar ampliada-fechar" id="ampliadaFechar" type="button" aria-label="Fechar foto">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button class="galeria-seta galeria-anterior" id="ampliadaAnterior" type="button" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button class="galeria-seta galeria-proxima" id="ampliadaProxima" type="button" aria-label="Próxima foto">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </dialog>
+
+  <!-- ===== RESUMO DA POLÍTICA DE PRIVACIDADE (aberto pelo aviso de cookies) ===== -->
+  <dialog class="resumo" id="resumoPrivacidade" aria-labelledby="resumoTitulo">
+    <div class="resumo-caixa">
+      <div class="resumo-topo">
+        <h2 class="subtitulo" id="resumoTitulo">Privacidade, em resumo</h2>
+        <button class="video-fechar" id="resumoFechar" type="button" aria-label="Fechar resumo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <p class="corpo">Este site não tem formulários e não cria contas. Você não precisa informar nenhum dado para navegar.</p>
+      <ul class="lista-texto">
+        <li>Dados técnicos (endereço IP, data e hora, páginas acessadas e tipo de navegador) são registrados pela Vercel, que hospeda o site.</li>
+        <li>As fontes de texto vêm do Adobe Fonts e do Google Fonts.</li>
+        <li>O Google Analytics e o Pixel da Meta medem as visitas e os anúncios. Eles gravam cookies e recebem também os cliques nos botões de WhatsApp e de e-mail.</li>
+        <li>Os vídeos do Vimeo só são carregados quando você clica para assistir.</li>
+      </ul>
+      <p class="corpo">Você pode recusar as ferramentas no aviso de cookies ou mudar sua escolha, a qualquer momento, pelo link "Cookies", no rodapé.</p>
+      <p class="corpo">Para pedir acesso, correção ou exclusão dos seus dados, escreva para o e-mail indicado na política completa.</p>
+      <a class="botao" href="privacidade.html">Ler a política completa</a>
+    </div>
+  </dialog>
+
+  <script src="data/site.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/grade.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/carrossel.js"></script>
+  <script src="js/pagina.js"></script>
+  <script src="js/consentimento.js"></script>
+  <!-- Vercel Speed Insights: só funciona depois de ativado no painel da Vercel (aba Speed Insights do projeto). Não usa cookies. -->
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+</body>
+</html>
