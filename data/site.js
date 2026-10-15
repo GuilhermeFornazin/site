@@ -21,9 +21,6 @@
      vimeoId          Projetos sem "videos": um vídeo só, aberto no player simples.
      descricao        Texto curto do player simples. Opcional.
 
-   clientes  Logos de clientes: { nome, src }, em assets/clientes/. Sem uso na página no momento.
-             Só use logos de clientes que autorizaram o uso.
-
    rastreio  IDs das ferramentas de medição. Vazio = desligado (sem aviso de cookies e sem nada carregado).
      googleAnalytics  ID do Google Analytics 4, no formato "G-XXXXXXXXXX" (Admin > Fluxos de dados).
      metaPixel        ID do Pixel da Meta, só números (Gerenciador de Eventos > Fontes de dados).
@@ -138,10 +135,6 @@ window.SITE = {
         { titulo: "Caminhada pela Paz - horizontal", vimeoId: "1236042220" }
       ]
     }
-  ],
-
-  clientes: [
-    { nome: "Dufe Coffee", src: "assets/clientes/dufe-coffee.svg" }
   ],
 
   rastreio: {

@@ -21,7 +21,7 @@ assets/hero/          vídeo do hero (MP4 sem áudio, em duas resoluções) e im
 assets/capas/         capas dos trabalhos em WebP: <nome>-800.webp e <nome>-1600.webp
 assets/sobre/         fotos da seção Sobre em WebP, nas mesmas duas larguras
 assets/logo/          logotipos (SVG)
-assets/clientes/      logos de clientes (sem uso na página no momento)
+assets/clientes/      logo de cliente guardado, sem uso na página (ver pendências)
 assets/_originais/    imagens e vídeos de origem, antes da conversão (fora do deploy)
 scripts/              ferramenta para gerar galerias de fotos (fora do deploy)
 docs/                 rascunho do texto de privacidade e relatório da auditoria em docs/auditoria/ (não vai para o ar)

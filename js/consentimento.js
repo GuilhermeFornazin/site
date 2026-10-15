@@ -82,7 +82,6 @@
   }
 
   function montarAviso() {
-    var nomes = [google && 'Google Analytics', pixel && 'Pixel da Meta'].filter(Boolean).join(' e ');
     aviso = document.createElement('section');
     aviso.className = 'cookies';
     aviso.setAttribute('aria-label', 'Aviso de cookies');
@@ -90,7 +89,7 @@
 
     var texto = document.createElement('p');
     texto.className = 'cookies-texto';
-    texto.textContent = 'Este site usa cookies para medir as visitas e melhorar os anúncios (' + nomes + '). Ao continuar, você permite o uso, mas pode recusar. ';
+    texto.textContent = 'Este site usa cookies para medir as visitas. Ao continuar, você permite o uso, mas pode recusar. ';
     // Abre a janela-resumo (dialog#resumoPrivacidade em index.html); a política completa está no link dentro dela.
     var link = document.createElement('button');
     link.type = 'button';

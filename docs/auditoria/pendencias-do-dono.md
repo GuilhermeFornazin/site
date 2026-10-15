@@ -32,6 +32,11 @@
    - Opção B: não publicar a página por enquanto.
    - Recomendação: A.
 
+9. **Logo de cliente sem uso (`assets/clientes/dufe-coffee.svg`).** A lista `clientes` de `data/site.js` foi removida na limpeza de código (ela não era lida por nenhum script). O arquivo continua guardado, porque é logo de cliente.
+   - Opção A: apagar o arquivo (confirme que o cliente não precisa mais dele).
+   - Opção B: manter guardado.
+   - Recomendação: B, até o cliente confirmar.
+
 8. **Arquivo `assets/logo/circular.svg`.** Era o favicon antigo e não é usado em nenhum arquivo do site.
    - Opção A: apagar.
    - Opção B: guardar em `assets/_originais/`, que fica fora do ar.

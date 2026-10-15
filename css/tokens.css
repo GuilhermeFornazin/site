@@ -1,15 +1,15 @@
-/* Tokens do site. Base do design system "Guilherme Fornazin", com fundo marrom bem escuro
+/* Tokens do site. Base do design system "Guilherme Fornazin", com fundo cinza bem escuro
    e acentos em marrom e dourado-bege. */
 
 :root {
   /* Base: fundo marrom escuro e texto claro */
-  --fundo: #130c08;          /* marrom bem escuro, quase preto */
-  --fundo-alto: #1e140e;
+  --fundo: #14100e;          /* cinza bem escuro, meio termo entre o marrom antigo (#130c08) e #141414 */
+  --fundo-alto: #191411;
   --fundo-janela: #151311;   /* janela do cliente: cinza neutro com um toque de marrom */
   --branco: #e4e4e7;
   --branco-medio: #a1a1aa;
   --cinza: #8a8a93;
-  --linha: #3a2b20;
+  --linha: #271f1a;
   --tinta: #0a0a0a;          /* texto sobre fundos claros */
 
   /* Acentos quentes */
